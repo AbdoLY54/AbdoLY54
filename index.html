@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+	<meta charset="UTF-8">
+  <title>ما هو PWA؟</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="manifest.json">
+  <style>
+body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      text-align: right;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      margin-bottom: 1em;
+    }
+    a {
+      color: #0000ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .btn {
+      background-color: #00a65a;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      text-align: center;
+      width: 100px;
+      margin-top: 20px;
+    }
+    .btn:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
+    .dakan {
+      background-color: #d9534f;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      text-align: center;
+      width: 100px;
+      margin-top: 20px;
+    }
+    .fath {
+      background-color: #00a65a;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      text-align: center;
+      width: 100px;
+      margin-top: 20px;
+    }
+    .btn-container {
+      display : flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    @media (max-width: 600px) {
+      .image {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<h1>ما هو PWA؟</h1>
+  <p>PWA هو اختصار لـ Progressive Web App، وهو نوع جديد من تطبيقات الويب التي تجمع بين أفضل ما في الويب والتطبيقات الأصلية. يمكن تثبيت تطبيقات PWA على الشاشة الرئيسية لجهازك، ويمكن الوصول إليها في وضع عدم الاتصال، وتوفر تجربة مستخدم غنية تشبه التطبيق.</p>
+  <p>تتضمن بعض مزايا تطبيقات PWA ما يلي:</p>
+  <ul>
+    <li>يمكن تثبيتها على الشاشة الرئيسية لجهازك</li>
+    <li>يمكن الوصول إليها في وضع عدم الاتصال</li>
+    <li>توفر تجربة مستخدم غنية تشبه التطبيق</li>
+    <li>تتكيف مع حجم شاشة جهازك</li>
+    <li>آمنة وموثوقة</li>
+  </ul>
+  <p>إذا كنت مهتمًا بتجربة PWA، فيمكنك زيارة <a href="https://developers.google.com/web/progressive-web-apps/">موقع مطوري Google</a> لمعرفة المزيد.</p>
+  <div class="btn-container">
+    <button class="dakan" onclick="darkMode()">دكان</button>
+    <button class="fath" onclick="lightMode()">فاتح</button>
+  </div>
+  <img class="image" src="pwa.png" alt="مثال على PWA">
+  <script>
+    function darkMode() {
+      document.body.style.backgroundColor = "#000000";
+      document.body.style.color = "#ffffff";
+    }
+    function lightMode() {
+      document.body.style.backgroundColor = "#ffffff";
+      document .body.style.color = "#000000";
+    }
+  </script>
+  </body> 
+  </html> 
